@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Notifications-->
+        <!--View Controller-->
         <scene sceneID="xjg-lv-9Ek">
             <objects>
                 <viewController id="SiH-PA-Vsd" sceneMemberID="viewController">
@@ -17,13 +17,13 @@
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bUJ-vc-drT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notifications" image="notifications" id="Lss-JY-VOI"/>
+                    <tabBarItem key="tabBarItem" title="" image="notifications" id="Lss-JY-VOI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDE-ZT-EbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1278" y="534"/>
         </scene>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="7fk-Is-p0c">
             <objects>
                 <viewController id="uj2-Yj-ypK" sceneMemberID="viewController">
@@ -33,13 +33,13 @@
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="0ZL-X8-9j5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="8hA-QK-Lgr"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" id="8hA-QK-Lgr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJx-SH-FDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="534"/>
         </scene>
-        <!--FAQ-->
+        <!--View Controller-->
         <scene sceneID="OdT-hp-hhD">
             <objects>
                 <viewController id="6DM-Vg-QZK" sceneMemberID="viewController">
@@ -49,13 +49,13 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="b4a-xl-M5b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="FAQ" image="faq" id="9tc-bm-iuz"/>
+                    <tabBarItem key="tabBarItem" title="" image="faq" id="9tc-bm-iuz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaK-6Z-fFK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="882" y="544"/>
         </scene>
-        <!--Linens-->
+        <!--View Controller-->
         <scene sceneID="huo-Q9-Vfm">
             <objects>
                 <viewController id="FvD-mI-MCB" sceneMemberID="viewController">
@@ -65,7 +65,7 @@
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ja8-iB-dss"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Linens" image="linens" id="fGy-oA-CUC"/>
+                    <tabBarItem key="tabBarItem" title="" image="linens" id="fGy-oA-CUC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBW-jR-dal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,11 +142,11 @@
             </objects>
             <point key="canvasLocation" x="1700" y="-271"/>
         </scene>
-        <!--Schedule-->
+        <!--Navigation Controller-->
         <scene sceneID="z8R-mr-uHz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="de4-fH-Sxx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" image="schedule" id="crk-MO-zdE"/>
+                    <tabBarItem key="tabBarItem" title="" image="schedule" id="crk-MO-zdE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Brb-hd-Dvv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
