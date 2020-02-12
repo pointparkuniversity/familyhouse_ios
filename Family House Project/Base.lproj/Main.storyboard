@@ -56,6 +56,22 @@
             <point key="canvasLocation" x="882" y="544"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="efO-cT-Jtu">
+            <objects>
+                <viewController id="rBE-Pn-r9I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pRc-Cr-SzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="25Z-IL-lGV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UQo-1h-L2t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYE-eo-jTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3372" y="532"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="huo-Q9-Vfm">
             <objects>
                 <viewController id="FvD-mI-MCB" sceneMemberID="viewController">
@@ -66,6 +82,9 @@
                         <viewLayoutGuide key="safeArea" id="Ja8-iB-dss"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="linens" id="fGy-oA-CUC"/>
+                    <connections>
+                        <segue destination="rBE-Pn-r9I" kind="show" id="OD1-38-HJ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBW-jR-dal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
