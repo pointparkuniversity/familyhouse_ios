@@ -15,40 +15,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J63-cB-Ucz">
-                                <rect key="frame" x="20" y="358" width="135" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-4k-bvb">
+                                <rect key="frame" x="0.0" y="86" width="414" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <state key="normal" title="ALERTS"/>
+                                <color key="backgroundColor" red="0.33863204665289171" green="0.70687795036896361" blue="0.74664895304568524" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="      LINENS"/>
                                 <connections>
-                                    <segue destination="Gqz-eC-v35" kind="show" id="lYc-XQ-EGq"/>
+                                    <segue destination="R5o-Xf-9cT" kind="show" id="EhX-uX-Qvp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-Rb-Vyw">
-                                <rect key="frame" x="20" y="520" width="172" height="30"/>
+                                <rect key="frame" x="0.0" y="501" width="414" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="FAQ"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.74901960784313726" blue="0.28627450980392155" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="      FAQ"/>
                                 <connections>
                                     <segue destination="qeK-rB-d0e" kind="show" id="LqV-S7-4Gf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIn-fI-hWG">
-                                <rect key="frame" x="20" y="648" width="332" height="57"/>
+                                <rect key="frame" x="0.0" y="698" width="423" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="EVENTS CALENDAR"/>
+                                <color key="backgroundColor" red="0.22352941176470587" green="0.70588235294117641" blue="0.81960784313725488" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="      EVENTS"/>
                                 <connections>
                                     <segue destination="mKL-EA-Bnb" kind="show" id="kgo-oT-b9S"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-4k-bvb">
-                                <rect key="frame" x="20" y="201" width="272" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J63-cB-Ucz">
+                                <rect key="frame" x="0.0" y="283" width="414" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="LINEN REQUEST"/>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="      ALERTS"/>
                                 <connections>
-                                    <segue destination="R5o-Xf-9cT" kind="show" id="EhX-uX-Qvp"/>
+                                    <segue destination="Gqz-eC-v35" kind="show" id="lYc-XQ-EGq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+            <point key="canvasLocation" x="327.536231884058" y="505.58035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="StS-FG-g6V">
@@ -75,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfE-Xy-spu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="418"/>
+            <point key="canvasLocation" x="1745" y="1061"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YPa-WC-lQd">
@@ -91,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GV7-f8-sit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1883" y="-265"/>
+            <point key="canvasLocation" x="1303" y="260"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3tN-mq-hgx">
@@ -109,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c21-d7-vHX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+            <point key="canvasLocation" x="-684" y="548"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lRR-oz-zVb">
@@ -125,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTJ-PT-YCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356" y="753"/>
+            <point key="canvasLocation" x="697" y="1298"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5KX-Fu-8rL">
@@ -141,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ylh-Cv-M9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1170" y="815"/>
+            <point key="canvasLocation" x="-180" y="1298"/>
         </scene>
     </scenes>
 </document>
