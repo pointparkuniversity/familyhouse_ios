@@ -15,14 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-4k-bvb">
-                                <rect key="frame" x="0.0" y="86" width="414" height="189"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CK9-4k-bvb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.33863204665289171" green="0.70687795036896361" blue="0.74664895304568524" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="      LINENS"/>
+                                <state key="normal" image="FH-Icons-Grey-1">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="     LINENS">
+                                            <attributes>
+                                                <font key="NSFont" size="45" name="Futura-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <segue destination="R5o-Xf-9cT" kind="show" id="EhX-uX-Qvp"/>
                                 </connections>
@@ -32,21 +40,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88627450980392153" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="45"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="      ALERTS"/>
+                                <state key="normal" title="     ALERTS" image="FH-Icons-Grey-2"/>
                                 <connections>
                                     <segue destination="Gqz-eC-v35" kind="show" id="lYc-XQ-EGq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIn-fI-hWG">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIn-fI-hWG">
                                 <rect key="frame" x="0.0" y="698" width="423" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22352941176470587" green="0.70588235294117641" blue="0.81960784313725488" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="45"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="      EVENTS"/>
+                                <state key="normal" title="     EVENTS" image="FH-Icons-Grey-5"/>
                                 <connections>
                                     <segue destination="mKL-EA-Bnb" kind="show" id="kgo-oT-b9S"/>
                                 </connections>
@@ -56,9 +64,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84705882352941175" green="0.74901960784313726" blue="0.28627450980392155" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="45"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="      FAQ"/>
+                                <state key="normal" title="     FAQ" image="FH-Icons-Grey-4"/>
                                 <connections>
                                     <segue destination="qeK-rB-d0e" kind="show" id="LqV-S7-4Gf"/>
                                 </connections>
@@ -73,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="327.536231884058" y="505.58035714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Alerts-->
         <scene sceneID="StS-FG-g6V">
             <objects>
                 <viewController id="Gqz-eC-v35" sceneMemberID="viewController">
@@ -83,13 +91,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="SW5-EF-9wJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PpV-7J-I2e"/>
+                    <navigationItem key="navigationItem" title="Alerts" id="PpV-7J-I2e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfE-Xy-spu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1745" y="1061"/>
         </scene>
-        <!--View Controller-->
+        <!--Linen Request-->
         <scene sceneID="YPa-WC-lQd">
             <objects>
                 <viewController id="R5o-Xf-9cT" sceneMemberID="viewController">
@@ -99,7 +107,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="T4M-wN-UKB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="I8e-oa-4ED"/>
+                    <navigationItem key="navigationItem" title="Linen Request" id="I8e-oa-4ED"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GV7-f8-sit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="-684" y="548"/>
         </scene>
-        <!--View Controller-->
+        <!--Events-->
         <scene sceneID="lRR-oz-zVb">
             <objects>
                 <viewController id="mKL-EA-Bnb" sceneMemberID="viewController">
@@ -133,13 +141,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ml1-1w-hhv"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fiI-KW-kLP"/>
+                    <navigationItem key="navigationItem" title="Events" id="fiI-KW-kLP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTJ-PT-YCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="697" y="1298"/>
         </scene>
-        <!--View Controller-->
+        <!--FAQ-->
         <scene sceneID="5KX-Fu-8rL">
             <objects>
                 <viewController id="qeK-rB-d0e" sceneMemberID="viewController">
@@ -149,11 +157,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="d7x-AL-NVt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xsJ-0E-ZWR"/>
+                    <navigationItem key="navigationItem" title="FAQ" id="xsJ-0E-ZWR">
+                        <barButtonItem key="backBarButtonItem" title="Go Back" id="qjh-TZ-sr6"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ylh-Cv-M9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-180" y="1298"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FH-Icons-Grey-1" width="100" height="100"/>
+        <image name="FH-Icons-Grey-2" width="101" height="100"/>
+        <image name="FH-Icons-Grey-4" width="101" height="101"/>
+        <image name="FH-Icons-Grey-5" width="100" height="101"/>
+    </resources>
 </document>
