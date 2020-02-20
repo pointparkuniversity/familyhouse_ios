@@ -104,6 +104,14 @@
                     <view key="view" contentMode="scaleToFill" id="J33-fN-zbz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a house" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="Dkz-xn-jkt">
+                                <rect key="frame" x="38" y="128" width="338" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="T4M-wN-UKB"/>
                     </view>
@@ -111,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GV7-f8-sit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="260"/>
+            <point key="canvasLocation" x="1302.8985507246377" y="259.82142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3tN-mq-hgx">
