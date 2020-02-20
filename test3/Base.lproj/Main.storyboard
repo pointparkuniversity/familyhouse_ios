@@ -27,16 +27,16 @@
                                     <segue destination="R5o-Xf-9cT" kind="show" id="EhX-uX-Qvp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-Rb-Vyw">
-                                <rect key="frame" x="0.0" y="501" width="414" height="189"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J63-cB-Ucz">
+                                <rect key="frame" x="0.0" y="283" width="414" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.84705882352941175" green="0.74901960784313726" blue="0.28627450980392155" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="      FAQ"/>
+                                <state key="normal" title="      ALERTS"/>
                                 <connections>
-                                    <segue destination="qeK-rB-d0e" kind="show" id="LqV-S7-4Gf"/>
+                                    <segue destination="Gqz-eC-v35" kind="show" id="lYc-XQ-EGq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIn-fI-hWG">
@@ -51,16 +51,16 @@
                                     <segue destination="mKL-EA-Bnb" kind="show" id="kgo-oT-b9S"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J63-cB-Ucz">
-                                <rect key="frame" x="0.0" y="283" width="414" height="210"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-Rb-Vyw">
+                                <rect key="frame" x="0.0" y="493" width="414" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.88627450980392153" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.74901960784313726" blue="0.28627450980392155" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="      ALERTS"/>
+                                <state key="normal" title="      FAQ"/>
                                 <connections>
-                                    <segue destination="Gqz-eC-v35" kind="show" id="lYc-XQ-EGq"/>
+                                    <segue destination="qeK-rB-d0e" kind="show" id="LqV-S7-4Gf"/>
                                 </connections>
                             </button>
                         </subviews>
