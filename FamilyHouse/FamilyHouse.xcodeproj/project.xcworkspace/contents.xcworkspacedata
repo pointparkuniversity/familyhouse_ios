@@ -2,6 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD:FamilyHouse/FamilyHouse.xcodeproj/project.xcworkspace/contents.xcworkspacedata
       location = "self:FamilyHouse.xcodeproj">
+=======
+      location = "self:">
+>>>>>>> a0abcf13437d57cd928a897e2b994ede2e7548e5:Family-House-iOS/Family-House-iOS.xcodeproj/project.xcworkspace/contents.xcworkspacedata
    </FileRef>
 </Workspace>
