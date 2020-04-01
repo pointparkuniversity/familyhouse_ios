@@ -10,6 +10,45 @@ import UIKit
 
 class ViewControllerSettings: UIViewController {
 
+    var OutputMsg = ""
+    
+    @IBOutlet weak var output: UILabel!
+    @IBOutlet weak var deviceId: UILabel!
+    
+    
+    @IBAction func swShadySide(_ sender: UISwitch) {
+        if(sender.isOn == true)
+        {
+            output.isHidden = false
+            output.text = "0"
+        }
+        else {
+            output.isHidden = true
+        }
+    }
+    
+    
+    @IBAction func swNeville(_ sender: UISwitch) {
+        if(sender.isOn == true)
+        {
+            output.isHidden = false
+            output.text = "1"
+        }
+        else {
+            output.isHidden = true
+        }
+    }
+    
+    @IBAction func swUnivPlace(_ sender: UISwitch) {
+        if(sender.isOn == true)
+               {
+                   output.isHidden = false
+                   output.text = "2"
+               }
+               else {
+                   output.isHidden = true
+               }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
           let navBar = self.navigationController?.navigationBar
@@ -20,6 +59,14 @@ class ViewControllerSettings: UIViewController {
           
           //Build the contact button on the top navigation menu
           setupContactButton()
+        
+          //Capture the Device Id
+            if let uuid = UIDevice.current.identifierForVendor?.uuidString {
+                deviceId.text = uuid
+                //deviceId.isHidden = true
+            }
+        
+          //API Call to Post or Put the message for the Settings table
         
     }
     
