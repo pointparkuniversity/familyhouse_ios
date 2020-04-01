@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8sp-R3-RWg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8sp-R3-RWg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" red="0.33863204670000002" green="0.70687795040000001" blue="0.746648953" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" image="FH-Icons-Grey-1">
+                                <state key="normal" image="FH-Icons-Grey-7">
                                     <attributedString key="attributedTitle">
                                         <fragment content="     LINENS">
                                             <attributes>
@@ -42,7 +42,7 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="45"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="     ALERTS" image="FH-Icons-Grey-2"/>
+                                <state key="normal" title="     ALERTS" image="FH-Icons-Grey-3"/>
                                 <connections>
                                     <segue destination="mRM-6O-OtB" kind="show" id="gL2-kW-QR6"/>
                                 </connections>
@@ -54,7 +54,7 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="45"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="     FAQ" image="FH-Icons-Grey-4"/>
+                                <state key="normal" title="     FAQ" image="FH-Icons-Grey-6"/>
                                 <connections>
                                     <segue destination="d1A-tL-bhN" kind="show" id="Arp-uE-PlX"/>
                                 </connections>
@@ -94,7 +94,7 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="45"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="     EVENTS" image="FH-Icons-Grey-5"/>
+                                <state key="normal" title="     EVENTS" image="FH-Icons-Grey-7"/>
                                 <connections>
                                     <segue destination="KK1-Lx-AnK" kind="show" id="ufC-qW-x4l"/>
                                 </connections>
@@ -790,6 +790,7 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="FH-Icons-Grey-1" width="76" height="44"/>
         <image name="FH-Icons-Grey-2" width="76" height="44"/>
         <image name="FH-Icons-Grey-4" width="76" height="44"/>
@@ -800,6 +801,12 @@
         <image name="Shadyside" width="606" height="170"/>
         <image name="Transportation-1" width="609" height="157"/>
         <image name="UniversityPlace" width="607" height="166"/>
+=======
+        <image name="FH-Icons-Grey-3" width="101" height="100"/>
+        <image name="FH-Icons-Grey-6" width="101" height="101"/>
+        <image name="FH-Icons-Grey-7" width="100" height="101"/>
+        <image name="GeneralFaq" width="594" height="170"/>
+>>>>>>> fa19e80a19bd11241ff315bff0652599653160c2
         <image name="add" width="76" height="44"/>
         <image name="allHouses" width="593" height="164"/>
         <image name="subtract" width="76" height="44"/>
