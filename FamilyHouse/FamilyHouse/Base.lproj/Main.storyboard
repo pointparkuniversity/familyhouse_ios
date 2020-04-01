@@ -551,7 +551,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPP-WR-KN4">
                                 <rect key="frame" x="0.0" y="131" width="414" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="ForFamilies"/>
+                                <state key="normal" backgroundImage="ForFamilies-1"/>
                                 <connections>
                                     <segue destination="gZD-jH-WbD" kind="show" id="W9y-iF-Tej"/>
                                 </connections>
@@ -567,7 +567,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXt-qF-Sp9">
                                 <rect key="frame" x="0.0" y="330" width="414" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Transportation"/>
+                                <state key="normal" backgroundImage="Transportation-1"/>
                                 <connections>
                                     <segue destination="7Q5-Kn-BDp" kind="show" id="CVP-VL-aju"/>
                                 </connections>
@@ -739,11 +739,11 @@
         <image name="FH-Icons-Grey-2" width="76" height="44"/>
         <image name="FH-Icons-Grey-4" width="76" height="44"/>
         <image name="FH-Icons-Grey-5" width="76" height="44"/>
-        <image name="ForFamilies" width="606" height="169"/>
+        <image name="ForFamilies-1" width="606" height="169"/>
         <image name="General" width="601" height="164"/>
         <image name="Neville" width="609" height="165"/>
         <image name="Shadyside" width="606" height="170"/>
-        <image name="Transportation" width="609" height="157"/>
+        <image name="Transportation-1" width="609" height="157"/>
         <image name="UniversityPlace" width="607" height="166"/>
         <image name="add" width="76" height="44"/>
         <image name="allHouses" width="593" height="164"/>
