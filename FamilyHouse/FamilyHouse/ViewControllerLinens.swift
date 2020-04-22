@@ -69,6 +69,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     
 
     @IBOutlet weak var textTowels: UITextField!
+    
     @IBAction func btnAddTowel(_ sender: UIButton) {
         towel_increment = Int(textTowels.text!)!
         self.textTowels.text = String(towel_increment + 1)
@@ -95,7 +96,9 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     //Submit Button when the user selects this action event
     @IBAction func btnSubmit(_ sender: UIButton) {
         //Action Event will call Function that will call the API
-        LinensPost()
+        //LinensPost()  //Needs tested
+        //Temporary for Demo to go to Success Page
+        
     }
     
     
