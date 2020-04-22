@@ -11,6 +11,9 @@ import UIKit
 class ViewControllerSettings: UIViewController {
 
     var OutputMsg = ""
+    var swShadySide = ""
+    var swNeville = ""
+    var swUnivPlace = ""
     
     @IBOutlet weak var output: UILabel!
     @IBOutlet weak var deviceId: UILabel!
@@ -20,10 +23,15 @@ class ViewControllerSettings: UIViewController {
         if(sender.isOn == true)
         {
             output.isHidden = false
-            output.text = "0"
+            swShadySide = "2"
+            output.text = swShadySide
+            
+            
         }
         else {
             output.isHidden = true
+            swShadySide = ""
+          
         }
     }
     
@@ -43,7 +51,7 @@ class ViewControllerSettings: UIViewController {
         if(sender.isOn == true)
                {
                    output.isHidden = false
-                   output.text = "2"
+                   output.text = "3"
                }
                else {
                    output.isHidden = true
@@ -90,14 +98,15 @@ class ViewControllerSettings: UIViewController {
            self.navigationItem.rightBarButtonItem = menuBarItem //positions where the item will be located
        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //Post the Settings to the API based on the users selection on the toggle button
+    func SettingsPost() {
+        
     }
-    */
+    
+    //Get the Settings from the API for the user
+    func SettingsGet() {
+        
+    }
+
 
 }

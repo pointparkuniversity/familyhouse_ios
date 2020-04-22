@@ -18,6 +18,12 @@
 		7424A7A22424787C003C668D /* ViewControllerAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A7A12424787C003C668D /* ViewControllerAlerts.swift */; };
 		7424A7A424247890003C668D /* ViewControllerFaq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A7A324247890003C668D /* ViewControllerFaq.swift */; };
 		7424A7A6242478AA003C668D /* ViewControllerLinens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A7A5242478AA003C668D /* ViewControllerLinens.swift */; };
+		748FF543244FE5D7001308FC /* ViewControllerFaqFamilies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FF542244FE5D7001308FC /* ViewControllerFaqFamilies.swift */; };
+		748FF545244FEAAB001308FC /* ViewControllerFaqAllHouses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FF544244FEAAB001308FC /* ViewControllerFaqAllHouses.swift */; };
+		748FF547244FEAC2001308FC /* ViewControllerFaqTransportation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FF546244FEAC2001308FC /* ViewControllerFaqTransportation.swift */; };
+		748FF549244FEAE1001308FC /* ViewControllerFaqNeville.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FF548244FEAE1001308FC /* ViewControllerFaqNeville.swift */; };
+		748FF54B244FEB1D001308FC /* ViewControllerFaqShadyside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FF54A244FEB1D001308FC /* ViewControllerFaqShadyside.swift */; };
+		748FF54D244FEB2E001308FC /* ViewControllerFaqUnivPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FF54C244FEB2E001308FC /* ViewControllerFaqUnivPlace.swift */; };
 		749D1F02242479E3009C498F /* ViewControllerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D1F01242479E3009C498F /* ViewControllerFunctions.swift */; };
 		74E624B9242A7C61004C6981 /* ViewControllerFaqGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E624B8242A7C61004C6981 /* ViewControllerFaqGeneral.swift */; };
 		74F931CD2427DD45000F01B0 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F931CC2427DD45000F01B0 /* ViewControllerSettings.swift */; };
@@ -37,6 +43,12 @@
 		7424A7A12424787C003C668D /* ViewControllerAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAlerts.swift; sourceTree = "<group>"; };
 		7424A7A324247890003C668D /* ViewControllerFaq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaq.swift; sourceTree = "<group>"; };
 		7424A7A5242478AA003C668D /* ViewControllerLinens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLinens.swift; sourceTree = "<group>"; };
+		748FF542244FE5D7001308FC /* ViewControllerFaqFamilies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaqFamilies.swift; sourceTree = "<group>"; };
+		748FF544244FEAAB001308FC /* ViewControllerFaqAllHouses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaqAllHouses.swift; sourceTree = "<group>"; };
+		748FF546244FEAC2001308FC /* ViewControllerFaqTransportation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaqTransportation.swift; sourceTree = "<group>"; };
+		748FF548244FEAE1001308FC /* ViewControllerFaqNeville.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaqNeville.swift; sourceTree = "<group>"; };
+		748FF54A244FEB1D001308FC /* ViewControllerFaqShadyside.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaqShadyside.swift; sourceTree = "<group>"; };
+		748FF54C244FEB2E001308FC /* ViewControllerFaqUnivPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaqUnivPlace.swift; sourceTree = "<group>"; };
 		749D1F01242479E3009C498F /* ViewControllerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFunctions.swift; sourceTree = "<group>"; };
 		74E624B8242A7C61004C6981 /* ViewControllerFaqGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaqGeneral.swift; sourceTree = "<group>"; };
 		74F931CC2427DD45000F01B0 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
@@ -87,6 +99,12 @@
 				749D1F01242479E3009C498F /* ViewControllerFunctions.swift */,
 				74F931CC2427DD45000F01B0 /* ViewControllerSettings.swift */,
 				74E624B8242A7C61004C6981 /* ViewControllerFaqGeneral.swift */,
+				748FF542244FE5D7001308FC /* ViewControllerFaqFamilies.swift */,
+				748FF544244FEAAB001308FC /* ViewControllerFaqAllHouses.swift */,
+				748FF546244FEAC2001308FC /* ViewControllerFaqTransportation.swift */,
+				748FF548244FEAE1001308FC /* ViewControllerFaqNeville.swift */,
+				748FF54A244FEB1D001308FC /* ViewControllerFaqShadyside.swift */,
+				748FF54C244FEB2E001308FC /* ViewControllerFaqUnivPlace.swift */,
 			);
 			path = FamilyHouse;
 			sourceTree = "<group>";
@@ -162,6 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748FF54B244FEB1D001308FC /* ViewControllerFaqShadyside.swift in Sources */,
+				748FF545244FEAAB001308FC /* ViewControllerFaqAllHouses.swift in Sources */,
 				7424A78E242476AC003C668D /* ViewController.swift in Sources */,
 				749D1F02242479E3009C498F /* ViewControllerFunctions.swift in Sources */,
 				74E624B9242A7C61004C6981 /* ViewControllerFaqGeneral.swift in Sources */,
@@ -169,6 +189,10 @@
 				7424A7A22424787C003C668D /* ViewControllerAlerts.swift in Sources */,
 				7424A78A242476AC003C668D /* AppDelegate.swift in Sources */,
 				7424A78C242476AC003C668D /* SceneDelegate.swift in Sources */,
+				748FF543244FE5D7001308FC /* ViewControllerFaqFamilies.swift in Sources */,
+				748FF54D244FEB2E001308FC /* ViewControllerFaqUnivPlace.swift in Sources */,
+				748FF547244FEAC2001308FC /* ViewControllerFaqTransportation.swift in Sources */,
+				748FF549244FEAE1001308FC /* ViewControllerFaqNeville.swift in Sources */,
 				7424A7A6242478AA003C668D /* ViewControllerLinens.swift in Sources */,
 				74F931CD2427DD45000F01B0 /* ViewControllerSettings.swift in Sources */,
 				7424A7A024247867003C668D /* ViewControllerEvents.swift in Sources */,

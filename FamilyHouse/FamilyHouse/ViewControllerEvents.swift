@@ -22,7 +22,7 @@ class ViewControllerEvents: UIViewController {
 
    
 }
-
+/*
 let configuration = NSURLSessionConfiguration .defaultSessionConfiguration()
    let session = NSURLSession(configuration: configuration)
 
@@ -60,7 +60,7 @@ let configuration = NSURLSessionConfiguration .defaultSessionConfiguration()
            do {
                let getResponse = try NSJSONSerialization.JSONObjectWithData(receivedData, options: .AllowFragments)
 
-               EZLoadingActivity .hide()
+               EZLoadingActivit	y .hide()
 
               // }
            } catch {
@@ -76,3 +76,4 @@ let configuration = NSURLSessionConfiguration .defaultSessionConfiguration()
        }
    }
    dataTask.resume()
+*/
