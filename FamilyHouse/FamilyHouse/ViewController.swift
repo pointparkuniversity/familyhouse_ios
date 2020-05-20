@@ -12,14 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupFamilyHouseLogo() //Sets the Image in the center
+        setupContactButton() //Sets the contact icon on the right side of the navigation menu
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         let navBar = self.navigationController?.navigationBar
         navBar?.barTintColor = .familyhouseWhite
         navBar?.tintColor = UIColor.black
         navBar?.isTranslucent = false
         navBar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        setupFamilyHouseLogo() //Sets the Image in the center
-        setupContactButton() //Sets the contact icon on the right side of the navigation menu
     }
+    
+
 
     func setupFamilyHouseLogo() {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 150, height: 40))
