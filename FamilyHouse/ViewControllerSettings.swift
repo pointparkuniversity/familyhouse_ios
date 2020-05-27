@@ -14,15 +14,23 @@ class ViewControllerSettings: UIViewController {
     var swShadySide = ""
     var swNeville = ""
     var swUnivPlace = ""
-    
+
+
     @IBOutlet weak var output: UILabel!
     @IBOutlet weak var deviceId: UILabel!
+    @IBOutlet weak var switchShadySide: UISwitch!
+    @IBOutlet weak var switchNeville: UISwitch!
+    @IBOutlet weak var switchUnivPlace: UISwitch!
     
     
     @IBAction func swShadySide(_ sender: UISwitch) {
+        // save switch values
+        let defaults = UserDefaults.standard
+        defaults.set(sender.isOn, forKey: "switchShadySide")
+        // old code
         if(sender.isOn == true)
         {
-            output.isHidden = false
+            output.isHidden = true//false
             swShadySide = "2"
             output.text = swShadySide
             
@@ -37,9 +45,13 @@ class ViewControllerSettings: UIViewController {
     
     
     @IBAction func swNeville(_ sender: UISwitch) {
+        // save switch value
+        let defaults = UserDefaults.standard
+        defaults.set(sender.isOn, forKey: "switchNeville")
+        // old code
         if(sender.isOn == true)
         {
-            output.isHidden = false
+            output.isHidden = true//false
             output.text = "1"
         }
         else {
@@ -48,9 +60,13 @@ class ViewControllerSettings: UIViewController {
     }
     
     @IBAction func swUnivPlace(_ sender: UISwitch) {
+        // save switch values
+        let defaults = UserDefaults.standard
+        defaults.set(sender.isOn, forKey: "switchUnivPlace")
+        // old code
         if(sender.isOn == true)
                {
-                   output.isHidden = false
+                   output.isHidden = true//false
                    output.text = "3"
                }
                else {
@@ -71,10 +87,16 @@ class ViewControllerSettings: UIViewController {
           //Capture the Device Id
             if let uuid = UIDevice.current.identifierForVendor?.uuidString {
                 deviceId.text = uuid
-                //deviceId.isHidden = true
+                deviceId.isHidden = true
             }
         
           //API Call to Post or Put the message for the Settings table
+        
+        // retrieve and set switch values
+        let defaults = UserDefaults.standard
+        switchShadySide.isOn = defaults.bool(forKey: "switchShadySide")
+        switchNeville.isOn = defaults.bool(forKey: "switchNeville")
+        switchUnivPlace.isOn = defaults.bool(forKey: "switchUnivPlace")
         
     }
     
