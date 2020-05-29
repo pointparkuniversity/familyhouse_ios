@@ -40,8 +40,8 @@ extension UIColor {
             return UIColor.black
         }
         
-        var rgb : UInt32 = 0
-        Scanner(string: hexString).scanHexInt32(&rgb)
+        var rgb : UInt64 = 0
+        Scanner(string: hexString).scanHexInt64(&rgb)
         
         return UIColor.init(
                 red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0,

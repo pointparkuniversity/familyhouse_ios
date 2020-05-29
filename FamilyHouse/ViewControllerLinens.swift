@@ -45,7 +45,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-        let pickervalue = items[row]
+        //let pickervalue = items[row]
     }
     
     
@@ -132,6 +132,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
 
                let session = URLSession.shared
                let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
+                   /*
                    //(response!)
                    do {
                        let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
@@ -139,6 +140,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
                    } catch {
                        //textView.text = ("error")
                    }
+                   */
                })
 
                task.resume()
