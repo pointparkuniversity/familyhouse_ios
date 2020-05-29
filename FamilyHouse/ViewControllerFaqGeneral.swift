@@ -21,10 +21,43 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /*
         tableViewData = [cellData(opened: false, title: "What is the Family House?", sectionData: ["","Family House is a 501(c)(3) nonprofit charitable organization whose mission is to provide a convenient and affordable “home away from home” for patients and their caregivers who must travel to Pittsburgh for medical treatment.",""]),
                          cellData(opened: false, title: "Where is the Family House located?", sectionData: ["","Family House has three locations in Pittsburgh’s Oakland and Shadyside neighborhoods. <b>Family House Neville</b> is located at 514 N. Neville St., Pittsburgh, PA, 15213; <b>Family House Shadyside</b> is located at 5245 Centre Ave., Pittsburgh, PA, 15232; and <b>Family House University</b> Place is located at 116 Thackeray Ave., Pittsburgh, PA, 15213.",""]),
                          cellData(opened: false, title: "How is Family House funded?", sectionData: ["","Family House is a nonprofit charitable organization governed by a community Board of Directors.  Family House’s charitable care—which is the difference between what a room actually costs the organization to operate vs. what Family House charges—amounts to more than $1.2 million annually. These funds are provided each year through generous contributions from individuals, companies, foundations, and other organizations. ",""]),
                          cellData(opened: false, title: "How can I support Family House?", sectionData: ["","Family House can be supported in a number of ways: volunteering your time as a House Volunteer or Group Volunteer, sponsoring a family for a night’s stay, underwriting a house gift, buying items from Family House’s wish list, hosting a fundraising event, or simply donating online at www.familyhouse.org",""])]
+        */
+
+        // Asynchronous Http call to your api url, using URLSession:
+        URLSession.shared.dataTask(with: URL(string: "https://familyhouseadmin.org/api/v1/faq")!) { (data, response, error) -> Void in
+            // Check if data was received successfully
+            if error == nil && data != nil {
+                do {
+                    // Convert to dictionary where keys are of type String, and values are of any type
+                    let json = try JSONSerialization.jsonObject(with: data!, options: []) as! [Any]
+                    if let generalsection = json.first as? [String: Any] {
+                        if let items = generalsection["items"] as? [Any] {
+                            for item in items {
+                                if let tmp = item as? [String: Any] {
+                                    if let question = tmp["question"] as? String {
+                                        if let answer = tmp["answer"] as? String {
+                                            // dynamically add row
+                                            self.tableViewData.append(cellData(opened: false, title: question, sectionData: ["",answer,""]))
+                                            DispatchQueue.main.async {
+                                                self.tableView.reloadData()
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } catch {
+                    // Something went wrong
+                    print("something went wrong")
+                }
+            }
+        }.resume()
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
