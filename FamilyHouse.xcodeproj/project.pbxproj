@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D7213862482C56100984EC8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7213852482C56100984EC8 /* Utils.swift */; };
 		7424A78A242476AC003C668D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A789242476AC003C668D /* AppDelegate.swift */; };
 		7424A78C242476AC003C668D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A78B242476AC003C668D /* SceneDelegate.swift */; };
 		7424A78E242476AC003C668D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7424A78D242476AC003C668D /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D7213852482C56100984EC8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7424A786242476AC003C668D /* FamilyHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7424A789242476AC003C668D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7424A78B242476AC003C668D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				748FF548244FEAE1001308FC /* ViewControllerFaqNeville.swift */,
 				748FF54A244FEB1D001308FC /* ViewControllerFaqShadyside.swift */,
 				748FF54C244FEB2E001308FC /* ViewControllerFaqUnivPlace.swift */,
+				4D7213852482C56100984EC8 /* Utils.swift */,
 			);
 			path = FamilyHouse;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				7424A7A424247890003C668D /* ViewControllerFaq.swift in Sources */,
 				7424A7A22424787C003C668D /* ViewControllerAlerts.swift in Sources */,
 				7424A78A242476AC003C668D /* AppDelegate.swift in Sources */,
+				4D7213862482C56100984EC8 /* Utils.swift in Sources */,
 				7424A78C242476AC003C668D /* SceneDelegate.swift in Sources */,
 				748FF543244FE5D7001308FC /* ViewControllerFaqFamilies.swift in Sources */,
 				748FF54D244FEB2E001308FC /* ViewControllerFaqUnivPlace.swift in Sources */,

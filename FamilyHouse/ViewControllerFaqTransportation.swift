@@ -8,21 +8,20 @@
 
 import UIKit
 
-struct FaqTrans {
-    var opened = Bool()
-    var title = String()
-    var sectionData = [String]()
-}
-
 class FaqTransTableViewController: UITableViewController {
     
-    var tableViewData = [FaqTrans]()
+    var tableViewData = [cellData]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableViewData = [FaqTrans(opened: false, title: "Is there transportation to and from the hospitals?", sectionData: ["","Courtesy shuttles provided by the UPMC Hospital System operate regularly throughout the day and evening. Guests staying with the VA Pittsburgh Healthcare System will receive a shuttle schedule from VA hospital staff. Guests staying with Allegheny General, West Penn, and Children’s hospitals will receive one round-trip Uber ride a day. Please speak with a staff member to receive your hospital’s full transportation information. ",""]),
-                         FaqTrans(opened: false, title: "Where can we park?", sectionData: ["","We strongly encourage guests to park at their designated hospital. We have reduced-rate parking vouchers for Presbyterian, Montefiore, Shadyside, Magee, Allegheny General, and West Penn hospitals. Parking is not guaranteed at the houses.",""])]
+        Utils.fetchFaqData(sectionname: "Transportation", callback: {(tmp:[cellData]) in
+            for item in tmp {
+                self.tableViewData.append(item)
+            }
+            OperationQueue.main.addOperation({
+                self.tableView.reloadData()
+            })
+        })
                    
     }
 
