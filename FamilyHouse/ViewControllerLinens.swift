@@ -96,7 +96,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     //Submit Button when the user selects this action event
     @IBAction func btnSubmit(_ sender: UIButton) {
         //Action Event will call Function that will call the API
-        //LinensPost()  //Needs tested
+        LinensPost()  //Needs tested
         //Temporary for Demo to go to Success Page
         
     }
@@ -123,39 +123,53 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
        }
     
     func LinensPost() {
-        let params = ["HouseName":HouseField.text!, "RoomNumber":RoomNumberField.text!, "Guests":GuestsField.text!, "LTTowels":Towels,"LTWashCloth":WashCloths, "LTBathMat":Bathmat,"LTBlueBag":BlueBag,"LTSheets":Sheets, "LTSheetsTwin":SheetsTwin,"LTSheetsQueen":SheetsQueen] as Dictionary<String, String>
+        //let params = ["HouseName":HouseField.text!, "RoomNumber":RoomNumberField.text!, "Guests":GuestsField.text!, "LTTowels":Towels,"LTWashCloth":WashCloths, "LTBathMat":Bathmat,"LTBlueBag":BlueBag,"LTSheets":Sheets, "LTSheetsTwin":SheetsTwin,"LTSheetsQueen":SheetsQueen] as Dictionary<String, String>
+        var params = [String: String]()
+        params["house"] = "1"
+        params["room"] = "2"
+        params["guests"] = "3"
+        params["towels"] = "4"
+        params["washcloths"] = "5"
+        params["bathmats"] = "6"
+        params["bluebag"] = "7"
+        params["date"] = "2020-05-30 00:00:00"
+        params["twinsheets"] = "9"
+        params["queensheets"] = "10"
+        params["pillowcases"] = "8"
+        params["isServed"] = "0"
+        params["phoneID"] = "0"
+        params["lastname"] = "null"
+        
+        var request = URLRequest(url: URL(string: "https://familyhouseadmin.org/api/v1/linens_request")!)
+        request.httpMethod = "POST"
+        request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
-               var request = URLRequest(url: URL(string: "http://familyhouse.it.pointpark.edu/api/v1/linens")!)
-               request.httpMethod = "POST"
-               request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
-               request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-
-               let session = URLSession.shared
-               let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
-                   /*
-                   //(response!)
-                   do {
-                       let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-                       //textView.text = (json)
-                   } catch {
-                       //textView.text = ("error")
-                   }
-                   */
-               })
-
-               task.resume()
-
+        let session = URLSession.shared
+        let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
+            //print(data)
+            //print(response)
+            //print(error)
+        /*
+           //(response!)
+           do {
+               let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
+               //textView.text = (json)
+           } catch {
+               //textView.text = ("error")
            }
+           */
+        })
+        task.resume()
     }
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+/*
+// MARK: - Navigation
 
-
-
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // Get the new view controller using segue.destination.
+    // Pass the selected object to the new view controller.
+}
+*/
