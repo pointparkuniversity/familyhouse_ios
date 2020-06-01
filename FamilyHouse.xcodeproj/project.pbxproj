@@ -28,6 +28,7 @@
 		749D1F02242479E3009C498F /* ViewControllerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D1F01242479E3009C498F /* ViewControllerFunctions.swift */; };
 		74E624B9242A7C61004C6981 /* ViewControllerFaqGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E624B8242A7C61004C6981 /* ViewControllerFaqGeneral.swift */; };
 		74F931CD2427DD45000F01B0 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F931CC2427DD45000F01B0 /* ViewControllerSettings.swift */; };
+		D82DF9E424853ACB009DEE25 /* ViewControllerEventsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82DF9E324853ACB009DEE25 /* ViewControllerEventsMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		749D1F01242479E3009C498F /* ViewControllerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFunctions.swift; sourceTree = "<group>"; };
 		74E624B8242A7C61004C6981 /* ViewControllerFaqGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFaqGeneral.swift; sourceTree = "<group>"; };
 		74F931CC2427DD45000F01B0 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
+		D82DF9E324853ACB009DEE25 /* ViewControllerEventsMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEventsMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				748FF54A244FEB1D001308FC /* ViewControllerFaqShadyside.swift */,
 				748FF54C244FEB2E001308FC /* ViewControllerFaqUnivPlace.swift */,
 				4D7213852482C56100984EC8 /* Utils.swift */,
+				D82DF9E324853ACB009DEE25 /* ViewControllerEventsMain.swift */,
 			);
 			path = FamilyHouse;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				7424A78E242476AC003C668D /* ViewController.swift in Sources */,
 				749D1F02242479E3009C498F /* ViewControllerFunctions.swift in Sources */,
 				74E624B9242A7C61004C6981 /* ViewControllerFaqGeneral.swift in Sources */,
+				D82DF9E424853ACB009DEE25 /* ViewControllerEventsMain.swift in Sources */,
 				7424A7A424247890003C668D /* ViewControllerFaq.swift in Sources */,
 				7424A7A22424787C003C668D /* ViewControllerAlerts.swift in Sources */,
 				7424A78A242476AC003C668D /* AppDelegate.swift in Sources */,

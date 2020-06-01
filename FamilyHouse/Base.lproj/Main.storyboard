@@ -96,7 +96,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="     EVENTS" image="FH-Icons-Grey-7"/>
                                 <connections>
-                                    <segue destination="jN1-t1-blG" kind="show" id="Ber-k9-E3b"/>
+                                    <segue destination="iZv-L9-Wiq" kind="show" id="Pek-gR-6UP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="events, choose a house." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE4-Zn-9CF">
@@ -117,7 +117,33 @@
             </objects>
             <point key="canvasLocation" x="463.768115942029" y="-197.54464285714286"/>
         </scene>
-        <!--Table View Controller-->
+        <!--EVENTS-->
+        <scene sceneID="GCW-Sr-ZIe">
+            <objects>
+                <viewController id="iZv-L9-Wiq" customClass="ViewControllerEventsMain" customModule="FamilyHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9EE-Oz-OlR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZj-df-cC4">
+                                <rect key="frame" x="70" y="155" width="274" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="icecream"/>
+                                <connections>
+                                    <segue destination="jN1-t1-blG" kind="show" id="chg-7Z-2gn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Htk-YQ-QB6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="EVENTS" id="ztc-Ld-Dus"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVq-Jj-YQO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="594.64285714285711"/>
+        </scene>
+        <!--EVENTS-->
         <scene sceneID="1pn-K4-XZ1">
             <objects>
                 <tableViewController id="jN1-t1-blG" sceneMemberID="viewController">
@@ -140,7 +166,7 @@
                             <outlet property="delegate" destination="jN1-t1-blG" id="7HV-3T-JzK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="6NV-ex-7wZ"/>
+                    <navigationItem key="navigationItem" title="EVENTS" id="6NV-ex-7wZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7o-dw-s47" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1091,6 +1117,7 @@
         <image name="FaqBar" width="259" height="14"/>
         <image name="add" width="76" height="44"/>
         <image name="faqarrow" width="19" height="14"/>
+        <image name="icecream" width="696" height="797"/>
         <image name="subtract" width="76" height="44"/>
     </resources>
 </document>

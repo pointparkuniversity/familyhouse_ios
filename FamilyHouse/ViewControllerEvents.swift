@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewControllerEvents: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewControllerEvents: UITableViewController {
 
     var bodies: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let navBar = self.navigationController?.navigationBar
         navBar?.barTintColor = .familyhouseBlue
         navBar?.tintColor = UIColor.white
@@ -23,16 +24,16 @@ class ViewControllerEvents: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
        /// Defines how many rows we want in the tableview
-       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
            return bodies.count - 20
-       }
+        }
        
        /// Defines our cells in the tableview
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            let cell = UITableViewCell()
            cell.textLabel?.text = bodies[indexPath.row]
            return cell
-       }
+        }
 
     /// Code for a GET call
     func getAPIEvent() {
