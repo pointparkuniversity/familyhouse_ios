@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8sp-R3-RWg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8sp-R3-RWg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -44,7 +44,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="     ALERTS" image="FH-Icons-Grey-3"/>
                                 <connections>
-                                    <segue destination="mRM-6O-OtB" kind="show" id="gL2-kW-QR6"/>
+                                    <segue destination="mRM-6O-OtB" kind="show" id="JYA-UL-fXc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vd-FE-SD4">
@@ -96,7 +96,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="     EVENTS" image="FH-Icons-Grey-7"/>
                                 <connections>
-                                    <segue destination="KK1-Lx-AnK" kind="show" id="ufC-qW-x4l"/>
+                                    <segue destination="jN1-t1-blG" kind="show" id="Ber-k9-E3b"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="events, choose a house." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE4-Zn-9CF">
@@ -116,6 +116,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8V-Us-MX1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="463.768115942029" y="-197.54464285714286"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="1pn-K4-XZ1">
+            <objects>
+                <tableViewController id="jN1-t1-blG" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lIM-Sz-oHF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lKx-6Y-efY">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lKx-6Y-efY" id="HkF-4V-2vS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jN1-t1-blG" id="27t-MN-ZCj"/>
+                            <outlet property="delegate" destination="jN1-t1-blG" id="7HV-3T-JzK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6NV-ex-7wZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7o-dw-s47" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="595"/>
         </scene>
         <!--ALERTS-->
         <scene sceneID="ueX-X8-MLI">
@@ -434,6 +463,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="subtract"/>
                                 <connections>
+                                    <action selector="btnSubGuests:" destination="7u7-d5-OuX" eventType="touchUpInside" id="5j0-XO-UEa"/>
                                     <action selector="btnSubTowel:" destination="7u7-d5-OuX" eventType="touchUpInside" id="mF4-E4-6YT"/>
                                 </connections>
                             </button>
@@ -442,6 +472,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textGuests:" destination="7u7-d5-OuX" eventType="editingDidEnd" id="vf0-kj-Kky"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of guests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwF-2f-XDO">
                                 <rect key="frame" x="231" y="402" width="138" height="21"/>
@@ -508,6 +541,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add"/>
                                 <connections>
+                                    <action selector="btnAddGuests:" destination="7u7-d5-OuX" eventType="touchUpInside" id="MuI-wB-fYB"/>
                                     <action selector="btnAddTowel:" destination="7u7-d5-OuX" eventType="touchUpInside" id="ieL-hl-JcH"/>
                                 </connections>
                             </button>
@@ -518,7 +552,9 @@
                     <navigationItem key="navigationItem" title="LINENS" id="k4p-3Y-7Py"/>
                     <connections>
                         <outlet property="picker" destination="Sbt-ub-2jk" id="HR9-sH-x2x"/>
+                        <outlet property="textGuests" destination="P9m-pd-Ccp" id="K8V-UC-OEH"/>
                         <outlet property="textTowels" destination="T4N-t1-aYz" id="Pwc-3b-Rzc"/>
+                        <outlet property="txtGuests" destination="P9m-pd-Ccp" id="bf8-l4-4Kg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjq-82-0Kg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

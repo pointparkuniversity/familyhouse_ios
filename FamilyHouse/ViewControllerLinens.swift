@@ -20,6 +20,7 @@ var SheetsQueen = ""
 class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     var towel_increment = 0;
+    var guests_increment = 0;
     
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var HouseField: UITextField!
@@ -68,7 +69,9 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
 
-    @IBOutlet weak var textTowels: UITextField!
+     @IBOutlet weak var textTowels: UITextField!
+     @IBOutlet weak var txtGuests: UITextField!
+     @IBOutlet weak var textGuests: UITextField!
     
     @IBAction func btnAddTowel(_ sender: UIButton) {
         towel_increment = Int(textTowels.text!)!
@@ -77,15 +80,27 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     @IBAction func btnSubTowel(_ sender: UIButton) {
         towel_increment = Int(textTowels.text!)!
-               self.textTowels.text = String(towel_increment - 1)
+        self.textTowels.text = String(towel_increment - 1)
     }
     
-    @IBAction func stepper_towels(_ sender: UIStepper) {
-        txtTowels.text = String(Int(sender.value))
+    /*
+    @IBAction func btnAddGuests(_ sender: UIButton) {
+        guests_increment = Int(textGuests.text!)!
+        self.textGuests.text = String(guests_increment + 1)
+    }
+    
+   
+    @IBAction func btnSubGuests(_ sender: UIButton) {
+        guests_increment = Int(textGuests.text!)!
+        self.textGuests.text = String(guests_increment - 1)
+    }
+    */
+    //@IBAction func stepper_towels(_ sender: UIStepper) {
+    //    txtTowels.text = String(Int(sender.value))
 
-    }
+    //}
     
-    @IBOutlet weak var txtTowels: UITextField!
+    //@IBOutlet weak var txtTowels: UITextField!
    
     
    

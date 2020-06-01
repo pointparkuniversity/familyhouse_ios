@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupFamilyHouseLogo() //Sets the Image in the center
-        setupContactButton() //Sets the contact icon on the right side of the navigation menu
+        //setupContactButton() //Sets the contact icon on the right side of the navigation menu
     }
     
     override func viewWillAppear(_ animated: Bool) {
