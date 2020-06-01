@@ -73,6 +73,20 @@
                                     <segue destination="Qzn-6U-6zq" kind="show" id="pcp-lJ-pkp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZm-lZ-9Kw">
+                                <rect key="frame" x="10" y="-7" width="414" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="-23" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qzn-6U-6zq" kind="show" id="jLe-nm-FbF"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To receive alerts and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sec-Zg-ETK">
                                 <rect key="frame" x="48" y="40" width="281" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -106,6 +120,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iES-H3-nHe">
+                                <rect key="frame" x="367" y="10" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="callbutton"/>
+                                <connections>
+                                    <segue destination="eZz-P6-65F" kind="show" id="4Gh-gw-nww"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YBW-vL-d7o"/>
@@ -1106,8 +1128,36 @@
             </objects>
             <point key="canvasLocation" x="2227.536231884058" y="-749.33035714285711"/>
         </scene>
+        <!--CONTACT-->
+        <scene sceneID="O79-sY-KB2">
+            <objects>
+                <viewController id="eZz-P6-65F" customClass="ViewControllerContact" customModule="FamilyHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WRs-Dc-dhg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="office" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-3f-mwK">
+                                <rect key="frame" x="20" y="117" width="384" height="703"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Iif-3f-mwK" firstAttribute="leading" secondItem="pSb-ZC-zvR" secondAttribute="leading" constant="15" id="Lb4-OJ-fJu"/>
+                            <constraint firstItem="pSb-ZC-zvR" firstAttribute="bottom" secondItem="Iif-3f-mwK" secondAttribute="bottom" constant="62" id="RQy-cU-PUq"/>
+                            <constraint firstItem="pSb-ZC-zvR" firstAttribute="trailing" secondItem="Iif-3f-mwK" secondAttribute="trailing" constant="15" id="gSh-J8-GM6"/>
+                            <constraint firstItem="Iif-3f-mwK" firstAttribute="top" secondItem="pSb-ZC-zvR" secondAttribute="top" constant="9" id="hGe-Rp-dL5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pSb-ZC-zvR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CONTACT" id="5bc-lO-eo5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUd-2v-IrK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="597"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="jLe-nm-FbF"/>
         <segue reference="9yf-6p-tzR"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1116,8 +1166,10 @@
         <image name="FH-Icons-Grey-7" width="100" height="101"/>
         <image name="FaqBar" width="259" height="14"/>
         <image name="add" width="76" height="44"/>
+        <image name="callbutton" width="39" height="30"/>
         <image name="faqarrow" width="19" height="14"/>
         <image name="icecream" width="696" height="797"/>
+        <image name="office" width="675" height="1326"/>
         <image name="subtract" width="76" height="44"/>
     </resources>
 </document>

@@ -64,7 +64,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
         navBar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
         //Build Button icon
-        setupContactButton()
+        //setupContactButton()
        
     }
     

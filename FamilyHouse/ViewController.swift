@@ -43,6 +43,8 @@ class ViewController: UIViewController {
         let menuBtn = UIButton(type: .custom)
         menuBtn.frame = CGRect(x: 0.0, y: 0.0, width: 20, height: 20)
         menuBtn.setImage(UIImage(named:"contactHome"), for: .normal)
+        
+
         //--> this will be where we provide a redirect
         
         // set the menu bar
@@ -57,6 +59,10 @@ class ViewController: UIViewController {
         currHeight?.isActive = true
         
         self.navigationItem.rightBarButtonItem = menuBarItem //positions where the item will be located
+        
+        
+     
+       
     }
 
 }
