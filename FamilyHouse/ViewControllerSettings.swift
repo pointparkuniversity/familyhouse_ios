@@ -82,7 +82,7 @@ class ViewControllerSettings: UIViewController {
           navBar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
           
           //Build the contact button on the top navigation menu
-          setupContactButton()
+          //setupContactButton()
         
           //Capture the Device Id
             if let uuid = UIDevice.current.identifierForVendor?.uuidString {
