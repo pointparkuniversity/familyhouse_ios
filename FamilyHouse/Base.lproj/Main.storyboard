@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8sp-R3-RWg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8sp-R3-RWg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -44,7 +44,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="     ALERTS" image="FH-Icons-Grey-3"/>
                                 <connections>
-                                    <segue destination="mRM-6O-OtB" kind="show" id="gL2-kW-QR6"/>
+                                    <segue destination="mRM-6O-OtB" kind="show" id="JYA-UL-fXc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vd-FE-SD4">
@@ -73,6 +73,20 @@
                                     <segue destination="Qzn-6U-6zq" kind="show" id="pcp-lJ-pkp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZm-lZ-9Kw">
+                                <rect key="frame" x="10" y="-7" width="414" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="-23" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qzn-6U-6zq" kind="show" id="jLe-nm-FbF"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To receive alerts and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sec-Zg-ETK">
                                 <rect key="frame" x="48" y="40" width="281" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,7 +110,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="     EVENTS" image="FH-Icons-Grey-7"/>
                                 <connections>
-                                    <segue destination="KK1-Lx-AnK" kind="show" id="ufC-qW-x4l"/>
+                                    <segue destination="iZv-L9-Wiq" kind="show" id="Pek-gR-6UP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="events, choose a house." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE4-Zn-9CF">
@@ -106,6 +120,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iES-H3-nHe">
+                                <rect key="frame" x="367" y="10" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="callbutton"/>
+                                <connections>
+                                    <segue destination="eZz-P6-65F" kind="show" id="4Gh-gw-nww"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YBW-vL-d7o"/>
@@ -116,6 +138,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8V-Us-MX1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="463.768115942029" y="-197.54464285714286"/>
+        </scene>
+        <!--EVENTS-->
+        <scene sceneID="GCW-Sr-ZIe">
+            <objects>
+                <viewController id="iZv-L9-Wiq" customClass="ViewControllerEventsMain" customModule="FamilyHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9EE-Oz-OlR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZj-df-cC4">
+                                <rect key="frame" x="70" y="155" width="274" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="icecream"/>
+                                <connections>
+                                    <segue destination="jN1-t1-blG" kind="show" id="chg-7Z-2gn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Htk-YQ-QB6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="EVENTS" id="ztc-Ld-Dus"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVq-Jj-YQO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="594.64285714285711"/>
+        </scene>
+        <!--EVENTS-->
+        <scene sceneID="1pn-K4-XZ1">
+            <objects>
+                <tableViewController id="jN1-t1-blG" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lIM-Sz-oHF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lKx-6Y-efY">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lKx-6Y-efY" id="HkF-4V-2vS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jN1-t1-blG" id="27t-MN-ZCj"/>
+                            <outlet property="delegate" destination="jN1-t1-blG" id="7HV-3T-JzK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="EVENTS" id="6NV-ex-7wZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7o-dw-s47" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="595"/>
         </scene>
         <!--ALERTS-->
         <scene sceneID="ueX-X8-MLI">
@@ -434,6 +511,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="subtract"/>
                                 <connections>
+                                    <action selector="btnSubGuests:" destination="7u7-d5-OuX" eventType="touchUpInside" id="5j0-XO-UEa"/>
                                     <action selector="btnSubTowel:" destination="7u7-d5-OuX" eventType="touchUpInside" id="mF4-E4-6YT"/>
                                 </connections>
                             </button>
@@ -442,6 +520,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textGuests:" destination="7u7-d5-OuX" eventType="editingDidEnd" id="vf0-kj-Kky"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of guests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwF-2f-XDO">
                                 <rect key="frame" x="231" y="402" width="138" height="21"/>
@@ -508,6 +589,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add"/>
                                 <connections>
+                                    <action selector="btnAddGuests:" destination="7u7-d5-OuX" eventType="touchUpInside" id="MuI-wB-fYB"/>
                                     <action selector="btnAddTowel:" destination="7u7-d5-OuX" eventType="touchUpInside" id="ieL-hl-JcH"/>
                                 </connections>
                             </button>
@@ -518,7 +600,9 @@
                     <navigationItem key="navigationItem" title="LINENS" id="k4p-3Y-7Py"/>
                     <connections>
                         <outlet property="picker" destination="Sbt-ub-2jk" id="HR9-sH-x2x"/>
+                        <outlet property="textGuests" destination="P9m-pd-Ccp" id="K8V-UC-OEH"/>
                         <outlet property="textTowels" destination="T4N-t1-aYz" id="Pwc-3b-Rzc"/>
+                        <outlet property="txtGuests" destination="P9m-pd-Ccp" id="bf8-l4-4Kg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjq-82-0Kg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1044,8 +1128,36 @@
             </objects>
             <point key="canvasLocation" x="2227.536231884058" y="-749.33035714285711"/>
         </scene>
+        <!--CONTACT-->
+        <scene sceneID="O79-sY-KB2">
+            <objects>
+                <viewController id="eZz-P6-65F" customClass="ViewControllerContact" customModule="FamilyHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WRs-Dc-dhg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="office" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-3f-mwK">
+                                <rect key="frame" x="20" y="117" width="384" height="703"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Iif-3f-mwK" firstAttribute="leading" secondItem="pSb-ZC-zvR" secondAttribute="leading" constant="15" id="Lb4-OJ-fJu"/>
+                            <constraint firstItem="pSb-ZC-zvR" firstAttribute="bottom" secondItem="Iif-3f-mwK" secondAttribute="bottom" constant="62" id="RQy-cU-PUq"/>
+                            <constraint firstItem="pSb-ZC-zvR" firstAttribute="trailing" secondItem="Iif-3f-mwK" secondAttribute="trailing" constant="15" id="gSh-J8-GM6"/>
+                            <constraint firstItem="Iif-3f-mwK" firstAttribute="top" secondItem="pSb-ZC-zvR" secondAttribute="top" constant="9" id="hGe-Rp-dL5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pSb-ZC-zvR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CONTACT" id="5bc-lO-eo5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUd-2v-IrK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="597"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="jLe-nm-FbF"/>
         <segue reference="9yf-6p-tzR"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1054,7 +1166,10 @@
         <image name="FH-Icons-Grey-7" width="100" height="101"/>
         <image name="FaqBar" width="259" height="14"/>
         <image name="add" width="76" height="44"/>
+        <image name="callbutton" width="39" height="30"/>
         <image name="faqarrow" width="19" height="14"/>
+        <image name="icecream" width="696" height="797"/>
+        <image name="office" width="675" height="1326"/>
         <image name="subtract" width="76" height="44"/>
     </resources>
 </document>

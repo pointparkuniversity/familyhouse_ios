@@ -20,7 +20,7 @@ class ViewControllerAlerts: UIViewController {
         navBar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
         //Build the contact button on the top navigation menu
-        setupContactButton()
+        //setupContactButton()
     }
     
     func setupContactButton() {

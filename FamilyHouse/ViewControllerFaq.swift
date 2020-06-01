@@ -27,7 +27,7 @@ class ViewControllerFaq: UIViewController {
         //let vc = ViewControllerFaq()
         //vc.text = "faq"
         
-        setupContactButton()
+        //setupContactButton()
     }
     
    
