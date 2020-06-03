@@ -73,20 +73,6 @@
                                     <segue destination="Qzn-6U-6zq" kind="show" id="pcp-lJ-pkp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZm-lZ-9Kw">
-                                <rect key="frame" x="10" y="-7" width="414" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <inset key="contentEdgeInsets" minX="-23" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal">
-                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Qzn-6U-6zq" kind="show" id="jLe-nm-FbF"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To receive alerts and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sec-Zg-ETK">
                                 <rect key="frame" x="48" y="40" width="281" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1157,7 +1143,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jLe-nm-FbF"/>
         <segue reference="9yf-6p-tzR"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1169,7 +1154,7 @@
         <image name="callbutton" width="39" height="30"/>
         <image name="faqarrow" width="19" height="14"/>
         <image name="icecream" width="696" height="797"/>
-        <image name="office" width="675" height="1326"/>
+        <image name="office" width="550" height="1106"/>
         <image name="subtract" width="76" height="44"/>
     </resources>
 </document>
