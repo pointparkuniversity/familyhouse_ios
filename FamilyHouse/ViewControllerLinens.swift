@@ -27,6 +27,42 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var RoomNumberField: UITextField!
     @IBOutlet weak var GuestsField: UITextField!
     
+     /*
+        Objects that represents the stepper for number of guests, towels, washcloths, bathmat,
+        blue bag,Twin Sheets and Queen Sheets
+     */
+    
+    @IBOutlet weak var stepperGuests: UIStepper!
+    @IBOutlet weak var stepperTowels: UIStepper!
+    @IBOutlet weak var stepperWashcloths: UIStepper!
+    @IBOutlet weak var stepperBathmat: UIStepper!
+    @IBOutlet weak var stepperBluebag: UIStepper!
+    @IBOutlet weak var stepperTwinsheets: UIStepper!
+    @IBOutlet weak var stepperQueensheets: UIStepper!
+    
+    
+    /*
+        Objects that represents the labels to store the numeric value between 1-10 for number of guests, towels, washcloths, bathmat, blue bag,Twin Sheets and Queen Sheets
+    */
+    
+    
+    @IBOutlet weak var lblGuests: UILabel!
+    @IBOutlet weak var lblTowels: UILabel!
+    @IBOutlet weak var lblWashcloths: UILabel!
+    @IBOutlet weak var lblBathmat: UILabel!
+    @IBOutlet weak var lblBluebag: UILabel!
+    @IBOutlet weak var lblTwinsheets: UILabel!
+    @IBOutlet weak var lblQueensheets: UILabel!
+    
+    
+    
+   
+    
+    
+    
+    /*
+     Conditional statements for the choosing of the houses
+    */
     let items = ["Neville","Shadyside","University Place"]
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int
@@ -63,59 +99,79 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
         navBar?.isTranslucent = false
         navBar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        //Build Button icon
-        //setupContactButton()
+        /*
+         Stepper Configuration for autorepeat, continous, min and max values
+        */
+        
+        // This tells the stepper object that the minimum value starts at 1
+        stepperGuests.minimumValue = 1
+        stepperTowels.minimumValue = 1
+        stepperWashcloths.minimumValue = 1
+        stepperBathmat.minimumValue = 1
+        stepperBluebag.minimumValue = 1
+        stepperTwinsheets.minimumValue = 1
+        stepperQueensheets.minimumValue = 1
+        
+        // This tells the stepper object that the maximum value stops at 10
+        stepperGuests.maximumValue = 10
+        stepperTowels.maximumValue = 10
+        stepperWashcloths.maximumValue = 10
+        stepperBathmat.maximumValue = 10
+        stepperBluebag.maximumValue = 10
+        stepperTwinsheets.maximumValue = 10
+        stepperQueensheets.maximumValue = 10
+        
+        // Initializes the value at to start at 1
+        lblGuests.text = "\(Int(stepperGuests.value))"
+        lblTowels.text = "\(Int(stepperTowels.value))"
+        lblWashcloths.text = "\(Int(stepperWashcloths.value))"
+        lblBathmat.text = "\(Int(stepperBathmat.value))"
+        lblBluebag.text = "\(Int(stepperBluebag.value))"
+        lblTwinsheets.text = "\(Int(stepperTwinsheets.value))"
+        lblQueensheets.text = "\(Int(stepperQueensheets.value))"
+
+        //tepperGuests.autorepeat = true
+        stepperGuests.isEnabled = true
+        
        
     }
     
-
-     @IBOutlet weak var textTowels: UITextField!
-     @IBOutlet weak var txtGuests: UITextField!
-     @IBOutlet weak var textGuests: UITextField!
-    
-    @IBAction func btnAddTowel(_ sender: UIButton) {
-        towel_increment = Int(textTowels.text!)!
-        self.textTowels.text = String(towel_increment + 1)
+    // Functions for the action event to have the label capture the value of the stepper object.
+ 
+    @IBAction func stepperGuestsEvent(_ sender: UIStepper) {
+        lblGuests.text = "\(Int(stepperGuests.value))"
     }
     
-    @IBAction func btnSubTowel(_ sender: UIButton) {
-        towel_increment = Int(textTowels.text!)!
-        self.textTowels.text = String(towel_increment - 1)
+    @IBAction func stepperTowelsEvent(_ sender: UIStepper) {
+        lblTowels.text = "\(Int(stepperTowels.value))"
     }
     
-    /*
-    @IBAction func btnAddGuests(_ sender: UIButton) {
-        guests_increment = Int(textGuests.text!)!
-        self.textGuests.text = String(guests_increment + 1)
+    
+    @IBAction func stepperWashclothsEvent(_ sender: UIStepper) {
+        lblWashcloths.text = "\(Int(stepperWashcloths.value))"
     }
+    
+    
+    @IBAction func stepperBathmatEvent(_ sender: UIStepper) {
+        lblBathmat.text = "\(Int(stepperBathmat.value))"
+    }
+    
+    
+    @IBAction func stepperBluebagEvent(_ sender: UIStepper) {
+        lblBluebag.text = "\(Int(stepperBluebag.value))"
+    }
+    
+    @IBAction func stepperTwinsheetsEvent(_ sender: UIStepper) {
+        lblTwinsheets.text = "\(Int(stepperTwinsheets.value))"
+    }
+    
+    
+    @IBAction func stepperQueensheetsEvent(_ sender: UIStepper) {
+        lblQueensheets.text = "\(Int(stepperQueensheets.value))"
+    }
+    
     
    
-    @IBAction func btnSubGuests(_ sender: UIButton) {
-        guests_increment = Int(textGuests.text!)!
-        self.textGuests.text = String(guests_increment - 1)
-    }
-    */
-    //@IBAction func stepper_towels(_ sender: UIStepper) {
-    //    txtTowels.text = String(Int(sender.value))
-
-    //}
-    
-    //@IBOutlet weak var txtTowels: UITextField!
-   
-    
-   
-    
-   
-  
-    
-    //Submit Button when the user selects this action event
-    @IBAction func btnSubmit(_ sender: UIButton) {
-        //Action Event will call Function that will call the API
-        LinensPost()  //Needs tested
-        //Temporary for Demo to go to Success Page
-        
-    }
-    
     
     func setupContactButton() {
            let menuBtn = UIButton(type: .custom)
