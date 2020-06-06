@@ -3,6 +3,7 @@
 //  test3
 //
 //  Created by Jeffrey Seaman on 3/7/20.
+//  Modified by Jeffrey Seaman on 6/5/20.
 //  Copyright © 2020 PPU. All rights reserved.
 //
 
@@ -16,18 +17,26 @@ var BlueBag = ""
 var Sheets = ""
 var SheetsTwin = ""
 var SheetsQueen = ""
+var RoomStr = ""
+var house = ""
+var datevalue = ""
 
 class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    var towel_increment = 0;
-    var guests_increment = 0;
+    //var towel_increment = 0;
+    //var guests_increment = 0;
     
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var HouseField: UITextField!
-    @IBOutlet weak var RoomNumberField: UITextField!
     @IBOutlet weak var GuestsField: UITextField!
+    @IBOutlet weak var LastName: UITextField!
+    @IBOutlet weak var btnSubmit: UIButton!
+    @IBOutlet weak var Room: UITextField!
     
-     /*
+    
+    
+    
+    /*
         Objects that represents the stepper for number of guests, towels, washcloths, bathmat,
         blue bag,Twin Sheets and Queen Sheets
      */
@@ -39,7 +48,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var stepperBluebag: UIStepper!
     @IBOutlet weak var stepperTwinsheets: UIStepper!
     @IBOutlet weak var stepperQueensheets: UIStepper!
-    
+    @IBOutlet weak var stepperPillowcases: UIStepper!
     
     /*
         Objects that represents the labels to store the numeric value between 1-10 for number of guests, towels, washcloths, bathmat, blue bag,Twin Sheets and Queen Sheets
@@ -53,7 +62,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var lblBluebag: UILabel!
     @IBOutlet weak var lblTwinsheets: UILabel!
     @IBOutlet weak var lblQueensheets: UILabel!
-    
+    @IBOutlet weak var lblPillowcases: UILabel!
     
     
    
@@ -91,87 +100,93 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+                
         let navBar = self.navigationController?.navigationBar
         navBar?.barTintColor = .familyhouseGreen
         navBar?.tintColor = UIColor.white
         navBar?.isTranslucent = false
         navBar?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
+        
         /*
          Stepper Configuration for autorepeat, continous, min and max values
         */
         
+        
         // This tells the stepper object that the minimum value starts at 1
-        stepperGuests.minimumValue = 1
-        stepperTowels.minimumValue = 1
-        stepperWashcloths.minimumValue = 1
-        stepperBathmat.minimumValue = 1
-        stepperBluebag.minimumValue = 1
-        stepperTwinsheets.minimumValue = 1
-        stepperQueensheets.minimumValue = 1
+        stepperGuests?.minimumValue = 1
+        stepperTowels?.minimumValue = 1
+        stepperWashcloths?.minimumValue = 1
+        stepperBathmat?.minimumValue = 1
+        stepperBluebag?.minimumValue = 1
+        stepperTwinsheets?.minimumValue = 1
+        stepperQueensheets?.minimumValue = 1
+        stepperPillowcases?.minimumValue = 1
         
         // This tells the stepper object that the maximum value stops at 10
-        stepperGuests.maximumValue = 10
-        stepperTowels.maximumValue = 10
-        stepperWashcloths.maximumValue = 10
-        stepperBathmat.maximumValue = 10
-        stepperBluebag.maximumValue = 10
-        stepperTwinsheets.maximumValue = 10
-        stepperQueensheets.maximumValue = 10
-        
+        stepperGuests?.maximumValue = 10
+        stepperTowels?.maximumValue = 10
+        stepperWashcloths?.maximumValue = 10
+        stepperBathmat?.maximumValue = 10
+        stepperBluebag?.maximumValue = 10
+        stepperTwinsheets?.maximumValue = 10
+        stepperQueensheets?.maximumValue = 10
+        stepperPillowcases?.maximumValue = 10
+       
         // Initializes the value at to start at 1
-        lblGuests.text = "\(Int(stepperGuests.value))"
-        lblTowels.text = "\(Int(stepperTowels.value))"
-        lblWashcloths.text = "\(Int(stepperWashcloths.value))"
-        lblBathmat.text = "\(Int(stepperBathmat.value))"
-        lblBluebag.text = "\(Int(stepperBluebag.value))"
-        lblTwinsheets.text = "\(Int(stepperTwinsheets.value))"
-        lblQueensheets.text = "\(Int(stepperQueensheets.value))"
+        lblGuests?.text = "\(Int(stepperGuests.value))"
+        lblTowels?.text = "\(Int(stepperTowels.value))"
+        lblWashcloths?.text = "\(Int(stepperWashcloths.value))"
+        lblBathmat?.text = "\(Int(stepperBathmat.value))"
+        lblBluebag?.text = "\(Int(stepperBluebag.value))"
+        lblTwinsheets?.text = "\(Int(stepperTwinsheets.value))"
+        lblQueensheets?.text = "\(Int(stepperQueensheets.value))"
+        lblPillowcases?.text = "\(Int(stepperPillowcases.value))"
 
         //tepperGuests.autorepeat = true
-        stepperGuests.isEnabled = true
-        
-       
+        //stepperGuests.isEnabled = true
+         
     }
     
     // Functions for the action event to have the label capture the value of the stepper object.
  
     @IBAction func stepperGuestsEvent(_ sender: UIStepper) {
-        lblGuests.text = "\(Int(stepperGuests.value))"
+        lblGuests?.text = "\(Int(stepperGuests.value))"
     }
     
     @IBAction func stepperTowelsEvent(_ sender: UIStepper) {
-        lblTowels.text = "\(Int(stepperTowels.value))"
+        lblTowels?.text = "\(Int(stepperTowels.value))"
     }
     
     
     @IBAction func stepperWashclothsEvent(_ sender: UIStepper) {
-        lblWashcloths.text = "\(Int(stepperWashcloths.value))"
+        lblWashcloths?.text = "\(Int(stepperWashcloths.value))"
     }
     
     
     @IBAction func stepperBathmatEvent(_ sender: UIStepper) {
-        lblBathmat.text = "\(Int(stepperBathmat.value))"
+        lblBathmat?.text = "\(Int(stepperBathmat.value))"
     }
     
     
     @IBAction func stepperBluebagEvent(_ sender: UIStepper) {
-        lblBluebag.text = "\(Int(stepperBluebag.value))"
+        lblBluebag?.text = "\(Int(stepperBluebag.value))"
     }
     
     @IBAction func stepperTwinsheetsEvent(_ sender: UIStepper) {
-        lblTwinsheets.text = "\(Int(stepperTwinsheets.value))"
+        lblTwinsheets?.text = "\(Int(stepperTwinsheets.value))"
     }
     
     
     @IBAction func stepperQueensheetsEvent(_ sender: UIStepper) {
-        lblQueensheets.text = "\(Int(stepperQueensheets.value))"
+        lblQueensheets?.text = "\(Int(stepperQueensheets.value))"
     }
     
     
-   
+    @IBAction func stepperPillowcasesEvent(_ sender: UIStepper) {
+        lblPillowcases?.text = "\(Int(stepperPillowcases.value))"
+    }
+    
     
     func setupContactButton() {
            let menuBtn = UIButton(type: .custom)
@@ -193,25 +208,56 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
            self.navigationItem.rightBarButtonItem = menuBarItem //positions where the item will be located
        }
     
-    func LinensPost() {
-        //let params = ["HouseName":HouseField.text!, "RoomNumber":RoomNumberField.text!, "Guests":GuestsField.text!, "LTTowels":Towels,"LTWashCloth":WashCloths, "LTBathMat":Bathmat,"LTBlueBag":BlueBag,"LTSheets":Sheets, "LTSheetsTwin":SheetsTwin,"LTSheetsQueen":SheetsQueen] as Dictionary<String, String>
-        var params = [String: String]()
-        params["house"] = "1"
-        params["room"] = "2"
-        params["guests"] = "3"
-        params["towels"] = "4"
-        params["washcloths"] = "5"
-        params["bathmats"] = "6"
-        params["bluebag"] = "7"
-        params["date"] = "2020-05-30 00:00:00"
-        params["twinsheets"] = "9"
-        params["queensheets"] = "10"
-        params["pillowcases"] = "8"
-        params["isServed"] = "0"
-        params["phoneID"] = "0"
-        params["lastname"] = "null"
+    
+    @IBAction func btnSubmit(_ sender: UIButton) {
+        //This calls the API Post reference
+        LinensPost()
         
-        var request = URLRequest(url: URL(string: "https://familyhouseadmin.org/api/v1/linens_request")!)
+    }
+    //This communicates with the Linens Post to the API
+    func LinensPost() {
+
+        
+        var params = [String: String]()
+
+        
+        //This captures the selection from the houses and articulates based on the values in the db
+        if(picker.selectedRow(inComponent: 0) == 0)
+        {
+             house = "1"
+        } else if(picker.selectedRow(inComponent: 0) == 1) {
+             house = "2"
+        } else if(picker.selectedRow(inComponent: 0) == 2) {
+             house = "3"
+        }
+        
+        //This captures the current date and time
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let formattedDate = format.string(from: date)
+        print(formattedDate)
+        datevalue = formattedDate
+        
+        
+        
+              params["house"] = house
+              params["room"] = Room?.text
+              params["guests"] = lblGuests?.text
+              params["towels"] = lblTowels?.text
+              params["washcloths"] = lblWashcloths?.text
+              params["bathmats"] = lblBathmat?.text
+              params["bluebag"] = lblBluebag?.text
+              params["date"] = datevalue
+              params["twinsheets"] = lblTwinsheets?.text
+              params["queensheets"] = lblQueensheets?.text
+              params["pillowcases"] = lblPillowcases?.text
+              params["isServed"] = "0"
+              params["phoneID"] = "0"
+              params["lastname"] = LastName?.text
+        
+        //var request = URLRequest(url: URL(string: "https://familyhouseadmin.org/api/v1/linens_request")!)
+        var request = URLRequest(url: URL(string: "http://familyhouse.it.pointpark.edu:3000/api/v1/linens/")!)
         request.httpMethod = "POST"
         request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -244,3 +290,4 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     // Pass the selected object to the new view controller.
 }
 */
+
